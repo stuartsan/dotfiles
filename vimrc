@@ -7,19 +7,19 @@ set ignorecase
 " highlight as pattern is typed
 set incsearch
 " at start of line tab inserts shiftwidth spaces, bs deletes
-set smarttab 
+set smarttab
 " get access to system clipboard...sort of / maybe
-set clipboard=unnamed 
+set clipboard=unnamed
 " make backspace work like most other apps
 set backspace=2
 " make columns and stuff
 set cc=80
 " allow switching between unsaved buffers without !, etc
-set hidden 
+set hidden
 " refresh buffers when they change externally
 set autoread
 " mouse support
-set mouse=a 
+set mouse=a
 " i forget
 set nocompatible
 
@@ -28,7 +28,7 @@ set listchars=tab:▸\ ,eol:¬,trail:·
 nmap <leader>l :set list!<CR>
 
 " leave me alone, swapfiles
-set noswapfile 
+set noswapfile
 
 " cool
 execute pathogen#infect()

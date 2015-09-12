@@ -1,0 +1,15 @@
+#!/bin/bash
+SESSION=`basename $PWD`
+
+tmux -2 new-session -d -s $SESSION
+
+tmux rename-window vim
+tmux split-window -v
+tmux resize-pane -D 12
+tmux split-window -h
+tmux select-pane -t -0
+tmux new-window -t $SESSION -a -n git
+tmux new-window -t $SESSION -a -n bash
+tmux select-window -t vim
+
+tmux -2 attach -t $SESSION

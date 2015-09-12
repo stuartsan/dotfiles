@@ -54,12 +54,13 @@ set noswapfile
 set t_Co=256
 set background=dark
 colorscheme solarized
-call togglebg#map("<F5>")
+call togglebg#map("<F6>")
 
 " file jumping
 set suffixesadd=.js,.jsx
 
 " indentation
+set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2

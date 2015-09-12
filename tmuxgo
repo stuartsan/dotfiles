@@ -4,6 +4,7 @@ SESSION=`basename $PWD`
 tmux -2 new-session -d -s $SESSION
 
 tmux rename-window vim
+tmux send-keys 'vim .' 'C-m'
 tmux split-window -v
 tmux resize-pane -D 12
 tmux split-window -h

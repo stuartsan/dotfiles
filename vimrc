@@ -7,11 +7,13 @@ call vundle#begin()
 " all plugins go between **HERE**
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'justinj/vim-react-snippets'
 Plugin 'kien/ctrlp.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 " and **HERE**
 call vundle#end()
 

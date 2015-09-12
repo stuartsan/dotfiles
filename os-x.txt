@@ -1,0 +1,24 @@
+iterm2
+node
+java
+brew
+	tig, tmux, tree, wget, leiningen, bpython
+virtualbox
+vagrant
+alfred
+dash
+slack
+limechat
+nv
+skype
+teamviewer
+pomodoro one
+amazon music
+vlc
+firefox
+chrome
+dropbox
+spectacle
+totalspaces
+zulip
+flux

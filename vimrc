@@ -1,3 +1,23 @@
+" stuff required for Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+" all plugins go between **HERE**
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'kien/ctrlp.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+" and **HERE**
+call vundle#end()
+
+" also required for Vundle
+filetype plugin indent on
+
 " set line numbers
 set nu
 " syntax highlighting
@@ -20,8 +40,6 @@ set hidden
 set autoread
 " mouse support
 set mouse=a
-" i forget
-set nocompatible
 
 " visualize whitespace
 set listchars=tab:▸\ ,eol:¬,trail:·
@@ -29,9 +47,6 @@ nmap <leader>l :set list!<CR>
 
 " leave me alone, swapfiles
 set noswapfile
-
-" cool
-execute pathogen#infect()
 
 " solarized
 set t_Co=256

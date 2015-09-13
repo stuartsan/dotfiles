@@ -12,8 +12,16 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'justinj/vim-react-snippets'
 Plugin 'kien/ctrlp.vim'
-Plugin 'guns/vim-clojure-static'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
+" the cost of not using emacs for clojure:
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
 " and **HERE**
 call vundle#end()
 
@@ -49,6 +57,9 @@ nmap <leader>l :set list!<CR>
 
 " leave me alone, swapfiles
 set noswapfile
+
+" turn on rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
 
 " solarized
 set t_Co=256
